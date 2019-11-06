@@ -9,7 +9,7 @@ Automatically sets `opam` environmental variables
 Using [Fisherman][fisher]:
 
 ```
-fisher install lwolfsonkin/fish-plugin-opam
+fisher add lwolfsonkin/fish-plugin-opam
 ```
 
 ## Potential Issues
