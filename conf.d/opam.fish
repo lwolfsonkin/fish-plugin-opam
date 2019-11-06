@@ -4,6 +4,7 @@ if command -s opam > /dev/null
     set -l switch (opam switch show)
     set -gx CAML_LD_LIBRARY_PATH "$HOME/.opam/$switch/lib/stublibs:/usr/local/lib/ocaml/stublibs";
     set -gx OPAMUTF8MSGS "1";
+    set -ge MANPATH
     set -gx MANPATH "$HOME/.opam/$switch/man":(manpath);
     set -gx PERL5LIB "$HOME/.opam/$switch/lib/perl5";
     set -gx OCAML_TOPLEVEL_PATH "$HOME/.opam/$switch/lib/toplevel";
